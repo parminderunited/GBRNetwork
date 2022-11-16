@@ -1,15 +1,15 @@
-# Run a FAKT Validator
+# Run a GBR Validator
 ## Setting up a node
-1. Git clone https://github.com/fkt20/FAKTNetwork.git
+1. Git clone https://github.com/parminderunited/GBRNetwork.git
 
 2. Copy source form node-example to root folder
 ```
-cp -r FAKTNetwork/node-example/FAKT  /root/
+cp -r GBRNetwork/node-example/GBR  /root/
 ```
 3. Create an Account
 
 ```
-cd /root/FAKT
+cd /root/GBR
 chmod +x openethereum
 ./openethereum account new --config nodes/validator/node.toml
 ```
@@ -38,13 +38,13 @@ reseal_on_txs = "none"
 
     Stake
 
-    To stake FAKT coin, all you should do is sending your FAKT coin to the FAKT Consensus contract address over the FAKT network from the validator address.
-    The FAKT Consensus contract address: 0x641dCb1B53966084Ca59dc9985a164D414ac1D28
-    The easiest way to do so, is to import your private key or key-store file to your favourite wallet (for example Metamask), switch network to FAKT and send the FAKT coin to the Consensus contract address.
+    To stake GBR coin, all you should do is sending your GBR coin to the GBR Consensus contract address over the GBR network from the validator address.
+    The GBR Consensus contract address: 0x5F3ef71c0deD2A0d354b8Ae9b0BA1fEd6F32aB64
+    The easiest way to do so, is to import your private key or key-store file to your favourite wallet (for example Metamask), switch network to GBR and send the GBR coin to the Consensus contract address.
 
     You can find your key-store (containing your private key) and the password for the created account in:
-    /FAKT/nodes/validator/keys/FAKT/UTC--xxxx
-    /FAKT/nodes/validator/node.pwd
+    /GBR/nodes/validator/keys/GBR/UTC--xxxx
+    /GBR/nodes/validator/node.pwd
 
 6. Wait for 1 cycle (approximately 48 hours).
 

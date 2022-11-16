@@ -1,19 +1,19 @@
 {
-  "name": "FAKTChain",
+  "name": "GBR20",
   "engine": {
     "authorityRound": {
       "params": {
-        "stepDuration": "9",
+        "stepDuration": "5",
         "blockReward": "0x1BC16D674EC80000",
-        "blockRewardContractAddress": "0xF6BbbdBe57E10837A0DB0cec8AE1b11348C1368b",
-        "blockRewardContractTransition": 50,
+        "blockRewardContractAddress": "0xA5C686F151A2096d8524ccBe19bb7A6062bA8599",
+        "blockRewardContractTransition": 100,
         "validators": {
           "multi": {
             "0": {
-              "list": ["0xe62949c9efdbb86f22f58cc864e01c5d908da0dd"]
+              "list": ["0xa7fbf7be8e109511ce9b0f7d861c4b34681f4f12"]
             },
-            "50": {
-              "safeContract": "0xfF4b98D4659E92a7AB7a8A69773fd7843f758091"
+            "100": {
+              "safeContract": "0xD529AF779Cd007db8B74Bd9BF77C384E5c880957"
             }
           }
         }
@@ -24,7 +24,7 @@
     "gasLimitBoundDivisor": "0x400",
     "maximumExtraDataSize": "0x20",
     "minGasLimit": "0x1388",
-    "networkID" : "0x7E58",
+    "networkID" : "0x3820",
     "eip155Transition": 0,
     "validateChainIdTransition": 0,
     "eip140Transition": 0,
@@ -46,8 +46,12 @@
     "eip2028Transition": "0x96",
     "eip2929Transition": "0x96",
     "eip2930Transition": "0x96",
+    "eip1559Transition": "0x65",
     "maxCodeSize": 124576,
-    "maxCodeSizeTransition": "0x0"
+    "maxCodeSizeTransition": "0x28d138",
+    "eip1559BaseFeeMaxChangeDenominator": "0x8",
+    "eip1559ElasticityMultiplier": "0x2",
+    "eip1559BaseFeeInitialValue": "0x1DCD6500"
   },
   "genesis": {
     "seal": {
@@ -69,6 +73,6 @@
       "0x0000000000000000000000000000000000000007": { "builtin": { "name": "alt_bn128_mul", "pricing": { "0": { "price": { "alt_bn128_const_operations": { "price": 4000 } } }, "0x96": { "info": "EIP-1108 Istanbul HF", "price": { "alt_bn128_const_operations": { "price": 6000 } } } } } },
       "0x0000000000000000000000000000000000000008": { "builtin": { "name": "alt_bn128_pairing", "pricing": { "0": { "price": { "alt_bn128_pairing": { "base": 100000, "pair": 80000 } } }, "0x96": { "info": "EIP-1108 Istanbul HF", "price": { "alt_bn128_pairing": { "base": 45000, "pair": 34000 } } } } } },
       "0x0000000000000000000000000000000000000009": { "builtin": { "name": "blake2_f", "pricing": { "0x96": { "info": "EIP-152 Istanbul HF", "price": { "blake2_f": { "gas_per_round": 1 } } } } } },
-      "0x0A29121C9cEd6d19Fe7e54042eb72aB40C4bc3C8": { "balance": "99000000000000000000000000" }
+      "0x06100e06D3bd0cae9D17Be3e9ab4bEdb38d993c9": { "balance": "60000000000000000000000000" }
   }
 }
